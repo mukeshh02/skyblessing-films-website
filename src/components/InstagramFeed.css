@@ -1,0 +1,34 @@
+/* Instagram Feed Section - Taggbox Widget */
+.instagram-feed-section {
+  padding: 40px 0;
+  background: var(--section-bg, #f8f9fa);
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.taggbox {
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .taggbox {
+    height: 500px;
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .taggbox {
+    height: 400px;
+    min-height: 400px;
+  }
+}

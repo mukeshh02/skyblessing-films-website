@@ -1,0 +1,8 @@
+.enquires-page {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.enquires-page main {
+  padding-top: 120px; /* Account for fixed header */
+}

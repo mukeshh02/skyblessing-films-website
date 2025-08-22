@@ -1,0 +1,80 @@
+.entry-splash {
+	position: relative;
+	min-height: 100vh;
+	background: #000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/* Grid removed in favor of single full-bleed background image */
+
+.entry-cell {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	padding-top: 70%;
+}
+
+.entry-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.85);
+	padding: 48px 56px;
+	text-align: center;
+}
+
+.brand-mark {
+	color: #fff;
+	margin-bottom: 16px;
+	letter-spacing: 2px;
+	
+}
+
+.brand-initial {
+	font-size: 28px;
+	font-weight: 600;
+	margin-right: 8px;
+}
+
+.brand-name {
+	font-size: 14px;
+	opacity: 0.9;
+}
+
+.brand-logo {
+	max-width: 264px; /* 220px + 20% = 264px */
+	height: auto;
+	margin-bottom: 16px;
+	display: block;
+	width: 100%;
+}
+
+.enter-btn {
+	background: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 9px 25px; /* 10px → 9px (10% smaller), 28px → 25px (10% smaller) */
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.enter-btn:hover {
+	background: #fff;
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	.entry-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.entry-center {
+		padding: 32px 36px;
+	}
+}
+
+
